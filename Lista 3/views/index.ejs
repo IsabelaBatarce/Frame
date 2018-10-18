@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head> 
+<meta charset="UTF-8"> 
+<title>Listando alunos</title> 
+</head>
+<body>
+
+<h1> CRUD - Node + Express + EJS + Mongod DB </h1>
+
+<h2>Listando Clientes</h2> 
+
+<ul>
+	<% for(var i=0; i<cadastro.length; i++) { %>
+		<li>
+			<span><%= cadastro[i].nome %></span>
+			<span><%= cadastro[i].idade %></span>
+			<span><%= cadastro[i].sexo %></span>
+
+
+		</li>
+		<% } %>	
+</ul>
+
+
+
+</body> 
+</html>
